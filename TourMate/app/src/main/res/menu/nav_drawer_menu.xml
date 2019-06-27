@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/profileMenuId"
+            android:title="Profile"
+            android:icon="@drawable/profile_pic"/>
+
+        <item
+            android:id="@+id/signOutMenuId"
+            android:title="Sign out"
+            android:icon="@drawable/sign_out"/>
+
+
+        <!--
+                <item
+                    android:id="@+id/tripsMenuId"
+                    android:title="Trips"
+                    android:icon="@drawable/trips"/>
+
+                <item
+                    android:id="@+id/nearbyMenuId"
+                    android:title="Nearby"
+                    android:icon="@drawable/nearby_location"/>
+
+                <item
+                    android:id="@+id/weatherMenuId"
+                    android:title="Weather"
+                    android:icon="@drawable/weather"/>  -->
+
+    </group>
+
+    <!--
+    <item android:title="Planner">
+        <menu>
+
+            <item
+                android:id="@+id/taskMenuId"
+                android:title="Task"
+                android:icon="@drawable/tasks"/>
+            <item
+                android:id="@+id/tourContactMenuId"
+                android:title="Tour Contacts"
+                android:icon="@drawable/tour_contact"/>
+
+        </menu>
+
+    </item>    -->
+
+</menu>

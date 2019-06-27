@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:padding="22dp"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EMAIL"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="260dp"/>
+
+    <EditText
+        android:layout_below="@+id/emailLabel"
+        android:id="@+id/userEmailLAETID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_edittext"
+        android:textColorHint="#FFFFFF"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/email"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/status_bar_color"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:drawableTint="@color/white"/>
+
+    <View
+        android:id="@+id/emailView"
+        android:layout_below="@+id/userEmailLAETID"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2.5dp"/>
+
+    <TextView
+        android:layout_below="@+id/emailView"
+        android:id="@+id/passwordLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PASSWORD"
+        android:layout_marginLeft="20dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/userPasswordLAETID"
+        android:layout_below="@+id/passwordLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_edittext"
+        android:textColorHint="#FFFFFF"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:inputType="textWebPassword"
+        android:drawableLeft="@drawable/password"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/status_bar_color"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:drawableTint="@color/white"/>
+
+    <View
+        android:layout_below="@+id/userPasswordLAETID"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2.5dp"/>
+
+    <Button
+        android:id="@+id/goBtnLAID"
+        android:layout_below="@+id/userPasswordLAETID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:textSize="20sp"
+        android:background="@drawable/rounded_button"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_below="@+id/goBtnLAID"
+        android:id="@+id/forgotPasswordLAID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:textAlignment="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/status_bar_color"
+        android:layout_marginTop="20dp"
+        android:onClick="forgotPasswordLA"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Have no account?"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="50dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textAlignment="center"
+        android:layout_marginLeft="130dp"
+        android:textColor="@color/status_bar_color"
+        android:textSize="15sp"
+        android:onClick="signUpActivity"/>
+
+
+</RelativeLayout>

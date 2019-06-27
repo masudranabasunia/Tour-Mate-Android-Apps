@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorPurple">#2B0D25</color>
+
+    <color name="status_bar_color">#DB5327</color>
+    <color name="action_bar_color">#C53F14</color>
+    <color name="trip_color">#F44336</color>
+    <color name="memory_color">#673AB7</color>
+    <color name="wallet_color">#00BCD4</color>
+    <color name="weather_color">#E91E63</color>
+    <color name="nearby_color">#009688</color>
+    <color name="contact_color">#4CAF50</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="trip_details_color">#19A1B3</color>
+    <color name="black">#000000</color>
+</resources>

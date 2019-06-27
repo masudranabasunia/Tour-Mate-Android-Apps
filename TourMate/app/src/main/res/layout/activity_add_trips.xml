@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTripsActivity"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp"
+            android:padding="22dp"
+            android:onClick="backBtnAddTrip"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_radio_button_unchecked_black_24dp"
+            android:padding="10dp"
+            android:onClick="backBtnAddTrip"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!--  trip name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TRIP NAME"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/tripNameETID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:textColorHint="#FFFFFF"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:drawableLeft="@drawable/trips"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/status_bar_color"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:drawableTint="@color/white"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="2.5dp"/>
+
+        <!--  trip description -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TRIP DESCRIPTION"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/tripDescriptionETID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:textColorHint="#FFFFFF"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:minLines="2"
+            android:gravity="top"
+            android:maxLines="10"
+            android:imeOptions="actionNext"
+            android:drawableLeft="@drawable/trip_description"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/status_bar_color"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:drawableTint="@color/white"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="2.5dp"/>
+
+        <!--  trip start date -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TRIP START DATE"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/tripStartDateETID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:textColorHint="#FFFFFF"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:drawableLeft="@drawable/date_pick"
+            android:onClick="pickStartDate"
+            android:inputType="date"
+            android:focusable="false"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/status_bar_color"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:drawableTint="@color/white"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="2.5dp"/>
+
+        <!--  trip end date -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TRIP END DATE"
+            android:layout_marginLeft="15dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/tripEndDateETID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:textColorHint="#FFFFFF"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:drawableLeft="@drawable/date_pick"
+            android:onClick="pickEndDate"
+            android:inputType="date"
+            android:focusable="false"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/status_bar_color"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:drawableTint="@color/white"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="2.5dp"/>
+
+        <!--  trip budget -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TRIP BUDGET"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/tripBudgetETID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:background="@drawable/rounded_edittext"
+            android:textColorHint="#FFFFFF"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:drawableLeft="@drawable/dollar"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/status_bar_color"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:drawableTint="@color/white"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="2.5dp"/>
+
+        <!--  add trip -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD TRIP"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_button"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="25dp"
+            android:onClick="addTripBtnATA"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

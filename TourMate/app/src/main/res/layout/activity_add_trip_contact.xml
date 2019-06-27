@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTripContactActivity"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp"
+            android:padding="22dp"
+            android:onClick="backBtnAddTripContact"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_radio_button_unchecked_black_24dp"
+            android:padding="10dp"
+            android:onClick="backBtnAddTripContact"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!--  contact name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NAME"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/tripContactNameETID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:textColorHint="#FFFFFF"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/status_bar_color"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:drawableTint="@color/white"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="2.5dp"/>
+
+        <!--  phone -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PHONE"
+            android:layout_marginLeft="15dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/tripContactPhoneETID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:textColorHint="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:drawableLeft="@drawable/phone"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/status_bar_color"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:drawableTint="@color/white"
+            android:hint="01XXXXXXXXX"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="2.5dp"/>
+
+        <!--  address -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADDRESS"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/tripContactAddressETID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:textColorHint="#FFFFFF"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:drawableLeft="@drawable/contact_address"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/status_bar_color"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:drawableTint="@color/white"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="2.5dp"/>
+
+        <!--  add trip -->
+        <Button
+            android:id="@+id/signBtnSignUpACTID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD CONTACT"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_button"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="25dp"
+            android:onClick="addTripContactBtn"/>
+
+    </LinearLayout>
+
+</LinearLayout>

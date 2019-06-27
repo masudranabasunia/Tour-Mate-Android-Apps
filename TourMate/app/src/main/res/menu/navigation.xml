@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/navigation_trips"
+        android:icon="@drawable/trips"
+        android:title="Trips" />
+
+    <item
+        android:id="@+id/navigation_memories"
+        android:icon="@drawable/memories"
+        android:title="Memories" />
+
+    <item
+        android:id="@+id/navigation_wallet"
+        android:icon="@drawable/wallet"
+        android:title="Wallet" />
+
+</menu>

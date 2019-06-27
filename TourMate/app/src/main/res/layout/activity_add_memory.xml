@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMemoryActivity"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp"
+            android:padding="22dp"
+            android:onClick="backBtnAddTrip"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_radio_button_unchecked_black_24dp"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:onClick="backBtnAddTrip"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/memoryImageIVID"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/add_memories"
+            android:onClick="imageRotate"/>
+        <Button
+            android:id="@+id/chooseImageBtnID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:imeOptions="actionNext"
+            android:text="Choose Image"
+            android:textColor="#FFFFFF"
+            android:background="@color/status_bar_color"
+            android:layout_marginTop="10dp"/>
+        <!--  memory caption -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Caption"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/imageCaptionETID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:textColorHint="#FFFFFF"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:minLines="2"
+            android:gravity="top"
+            android:maxLines="10"
+            android:imeOptions="actionDone"
+            android:drawableLeft="@drawable/trip_description"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/status_bar_color"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:drawableTint="@color/white"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="2.5dp"/>
+
+        <!--  add trip -->
+        <Button
+            android:id="@+id/saveMemoryBtnID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Memory"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_button"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="25dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

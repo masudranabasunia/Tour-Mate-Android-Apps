@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerificationActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp"
+        android:padding="22dp"
+        android:onClick="backBtn"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_radio_button_unchecked_black_24dp"
+        android:padding="10dp"
+        android:onClick="backBtn"/>
+
+    <TextView
+        android:id="@+id/verificationCodeTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Verification Code"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:layout_below="@+id/verificationCodeTV"
+        android:id="@+id/verificationCodeETID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g. 56748"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="130dp"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:singleLine="true"
+        android:imeOptions="actionDone"/>
+
+    <TextView
+        android:layout_below="@+id/verificationCodeETID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="N.B. The code was sent to your phone"
+        android:textAlignment="center"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/continueBtnID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/ic_arrow_forward_black_24dp"
+        android:tint="#FFFFFF"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/status_bar_color"/>
+
+
+</RelativeLayout>
