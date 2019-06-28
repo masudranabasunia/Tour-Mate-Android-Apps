@@ -1,5 +1,6 @@
 package com.example.tourmate;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -86,17 +87,19 @@ public class MyWeatherActivity extends AppCompatActivity {
             String description = "";
             String temperature = "";
 
-            for (int i = 0; i < array.length(); i++) {
-                JSONObject weatherPart = array.getJSONObject(i);
-                main = weatherPart.getString("main");
-                description = weatherPart.getString("description");
-            }
+                for (int i = 0; i < array.length(); i++) {
+                    JSONObject weatherPart = array.getJSONObject(i);
+                    main = weatherPart.getString("main");
+                    description = weatherPart.getString("description");
+                }
 
-            JSONObject mainPart = new JSONObject(mainTemperature);
-            temperature = mainPart.getString("temp");
-            //visibility = Double.parseDouble(jsonObject.getString("visibility"));
-            String resultText = "Main : "+main+"\nDescription : "+description +"\nTemperature : "+temperature+"°"+"C";
-            result.setText(resultText);
+                JSONObject mainPart = new JSONObject(mainTemperature);
+                temperature = mainPart.getString("temp");
+
+                String resultText = "Main : " + main + "\nDescription : " + description + "\nTemperature : " + temperature + "°" + "C";
+                result.setText(resultText);
+
+
         } catch (Exception e) {
             e.printStackTrace();
         }

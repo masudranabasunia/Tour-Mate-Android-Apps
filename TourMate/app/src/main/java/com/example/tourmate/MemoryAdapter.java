@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -38,13 +39,18 @@ public class MemoryAdapter extends RecyclerView.Adapter<MemoryAdapter.ViewHolder
     public void onBindViewHolder(@NonNull MemoryAdapter.ViewHolder viewHolder, int i) {
 
         Upload upload = uploadList.get(i);
-        Picasso.with(context)
+        /* Picasso.with(context)
                 .load(upload.getImageUrl())
                 .placeholder(R.mipmap.ic_launcher_round)
                 .fit()
                 .centerCrop()
                 .rotate(90)
-                .into(viewHolder.imageViewMA);
+                .into(viewHolder.imageViewMA);  */
+
+        Glide.with(context)
+                .load(upload.getImageUrl())
+                .placeholder(R.mipmap.ic_launcher_round)
+                .into(viewHolder.imageViewMA );
         viewHolder.imageCaptionMA.setText(upload.getImageCaption());
 
     }

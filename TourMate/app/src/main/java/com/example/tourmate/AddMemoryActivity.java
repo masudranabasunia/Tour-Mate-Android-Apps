@@ -3,7 +3,11 @@ package com.example.tourmate;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.Matrix;
+import android.media.ExifInterface;
 import android.net.Uri;
+import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -16,6 +20,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -30,6 +35,7 @@ import com.google.firebase.storage.StorageTask;
 import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 
+import java.io.IOException;
 import java.net.URI;
 import java.util.HashMap;
 
@@ -165,7 +171,12 @@ public class AddMemoryActivity extends AppCompatActivity implements View.OnClick
         if (requestCode == IMAGE_REQUEST && resultCode == RESULT_OK && data!=null && data.getData()!=null){
 
             imageUri = data.getData();
-            Picasso.with(this).load(imageUri).rotate(90).into(memoryImage);
+            //Picasso.with(this).load(imageUri).rotate(90).into(memoryImage);
+            Glide.with(this.getApplicationContext())
+                    .load(imageUri)
+                    .into(memoryImage );
+
+
 
         }
     }
